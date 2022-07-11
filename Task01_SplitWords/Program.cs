@@ -17,10 +17,12 @@ namespace Task01_SplitWords
         /// <summary>
         /// Метод разделения строки на массив слов по разделителю - "Пробел".
         /// </summary>
-        /// <returns>Массив слов</returns>
-        static string[] SplitWords(string stringLine, char separator = ' ')
+        /// <param name="parseString">Строка для разбивки на слова</param>
+        /// <param name="separator">Разделитель по умолчанию</param>
+        /// <returns>Строковый массив слов</returns>
+        static string[] SplitWords(string parseString, char separator = ' ')
         {
-            return stringLine.Split(separator);
+            return parseString.Split(separator);
         }
         /// <summary>
         /// Метод вывода элементов массива на экран
